@@ -9,9 +9,9 @@ public class Script : MonoBehaviour
     string vehiculo;
     float horasTotales;
     float kilometrosPorHora;
-    float cantHoras;
     float precioHora;
     float precioTotalHoras;
+    bool aumento;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +38,8 @@ public class Script : MonoBehaviour
             kilometrosPorHora = 25;
             horasTotales = kilometros / kilometrosPorHora;
             Debug.Log($" y las horas totales son {horasTotales}");
+            aumento = kilometros > 50;
+            Debug.Log($"se cobra una hora extra por excederse {aumento}");
             return;
             
         }
@@ -51,6 +53,8 @@ public class Script : MonoBehaviour
             kilometrosPorHora = 25;
             horasTotales = kilometros / kilometrosPorHora;
             Debug.Log($" y las horas totales son {horasTotales}");
+            aumento = kilometros > 50;
+            Debug.Log($"se cobra una hora extra por excederse {aumento}");
             return;
 
         }
@@ -64,6 +68,8 @@ public class Script : MonoBehaviour
             kilometrosPorHora = 25;
             horasTotales = kilometros / kilometrosPorHora;
             Debug.Log($" y las horas totales son {horasTotales}");
+            aumento = kilometros > 50;
+            Debug.Log($"se cobra una hora extra por excederse {aumento}");
             return;
 
         }
