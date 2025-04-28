@@ -32,9 +32,10 @@ public class Script : MonoBehaviour
         if (kilos < 2000 && kilos > 100)
         {
             vehiculo = "utilitario";
-            precioHora = 3000;
-            precioTotalHoras = kilometros * precioHora;
             Debug.Log($"El vehiculo que se necesita es {vehiculo}");
+            precioHora = 3000;
+            precioTotalHoras = kilometros * precioHora;  
+            Debug.Log($"el precio total es {precioTotalHoras}");
             kilometrosPorHora = 25;
             horasTotales = kilometros / kilometrosPorHora;
             Debug.Log($" y las horas totales son {horasTotales}");
